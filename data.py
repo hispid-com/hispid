@@ -1,0 +1,3 @@
+vars = {}
+dicts = {}
+lists ={}
