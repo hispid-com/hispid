@@ -9,18 +9,11 @@ class Plugin:
     def __init__(self):
         self.description = '未知'
 
-    def main(self, ml, cs,info):
+    def main(self, ml, cs):
         """
         实际执行插件所执行的方法，该方法所有插件类都需要实现
         """
-        return 0
-    def run(self,info):
-        #以文件运行时，导入将运行的命令
-        return 0
-    def cli(self,info):
-        #命令行选项
-        return 0
-    
+        raise NotImplementedError
 
 
 class Plugin_init:
@@ -48,6 +41,12 @@ class Plugin_init:
                 plugin.main(ml, cs,info)
             else:
                 print()
+    def apply_package(self,package):
+        ip = self.input_plugins
+        if package in self.plugins:
+            ip.append(package)
+        else:
+            return "这个包不存在"
             
             
         
