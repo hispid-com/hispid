@@ -1,2 +1,12 @@
-*.pyc
+#python编译文件
+__pycache__/
+# Hspid测试代码文件
 *.his
+# Mt管理器备份文件
+*.bak
+#pycharm数据文件
+.idea/
+#pyinstaller数据文件
+*.spec
+# Vs code数据文件
+.vscode/
