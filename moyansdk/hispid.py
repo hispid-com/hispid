@@ -22,7 +22,7 @@ import hashlib
 import json
 import os
 from itertools import (takewhile, repeat)
-#from flask import Flask
+from flask import Flask
 
 def get_cs(code):
     tmp = code.split("{")
