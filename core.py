@@ -23,6 +23,7 @@ from plugin_manager import Plugin_init
 import data
 #初始化插件
 plu = Plugin_init('plugins')
+message = sdk.rjson("config.json")
 def main(code,line,codes,path):
    #将所有字符转换为小写
     command = code.lower()
@@ -42,7 +43,7 @@ def main(code,line,codes,path):
         # print(cs)
         # print(ml)
         if ml == "help":
-            f = open("res/help/chinese.txt", encoding='UTF-8')
+            f = open("res/help/{}.txt".format(message["language"]), encoding='UTF-8')
             print(f.read())
         elif ml == "copyright":
             f = open("res/copyright", encoding='UTF-8')

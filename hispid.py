@@ -83,7 +83,7 @@ elif "-v" in command_line_parameters:
     #读取消息并输出
     print(message["version"])
 elif "-h" in command_line_parameters:
-    f = open("res/help/chinese.txt", encoding='UTF-8')
+    f = open("res/help/{}.txt".format(message["language"]), encoding='UTF-8')
     print(f.read())
 elif "-nm" in command_line_parameters:
     clindex = command_line_parameters.index("-nm")

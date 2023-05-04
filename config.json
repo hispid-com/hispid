@@ -4,6 +4,7 @@
   "OS": "Linux",
   "pre": "(Beta Version)",
   "jg":"ARM64",
-  "out_text": "high-level interpreted static programming language developed with Python {} [{}bit ({})] {}.Can run with {} system.Type 'help', 'copyright' or 'license' for more information."
+  "out_text": "high-level interpreted static programming language developed with Python {} [{}bit ({})] {}.Can run with {} system.Type 'help', 'copyright' or 'license' for more information.",
+  "language":"zh-CN"
   
 }
