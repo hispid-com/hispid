@@ -60,14 +60,5 @@ def main(code,line,codes,path):
                 print("In the {} line, these: {} are not valid strings".format(line+1,codes[line]))
             else:
                 exec(csStr)
-        elif ml == "import":
-            csStr = sdk.get_str(cs)
-            #print(csStr)
-            if csStr == "this参数効菓的สตริง":
-                print("In the {} line, these: {} are not valid strings".format(line+1,codes[line]))
-            else:
-                tmp = plu.apply_package(csStr)
-                if tmp == "这个包不存在":
-                    print("这个包不存在。")
         else:
             plu.apply_all_plugins_on_value(ml,cs,info)
