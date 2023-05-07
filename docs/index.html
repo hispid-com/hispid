@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
-  <meta charset="UTF-8">
-  <title>HISPID</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css">
+    <meta charset="UTF-8">
+    <title>HISPID</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4.13.0/lib/themes/dark.css">
 </head>
+
 <body>
     <nav>
         <a href="#/">EN</a>
@@ -16,16 +18,28 @@
     <div id="app">加载中……</div>
     <script>
         window.$docsify = {
-            name: '<h1>hispid</h1>',
+            name: 'HISPID',
             repo: 'moyanj/hispid/'
             notFoundPage: '_404.md',
             loadNavbar: true,
-            coverpage: '_coverpage.md'
-            nameLink: '/'
+            coverpage: '_coverpage.md',
+            onlyCover: true,
+            nameLink: '/',
+            // 完整配置参数
+            search: {
+                maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+                paths: auto,
+
+                // 搜索标题的最大层级, 1 - 6
+                depth: 6,
+
+                hideOtherSidebarContent: false, // 是否隐藏其他侧边栏内容
+
+            }
         }
     </script>
     <!-- Docsify v4 -->
-    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@4.13.0/lib/docsify.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-bash.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-python.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-go.min.js"></script>
@@ -36,6 +50,8 @@
     <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-json.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
-    
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+
 </body>
+
 </html>
