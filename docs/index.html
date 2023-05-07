@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
@@ -9,20 +9,21 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
-  <div id="app">加载中……</div>
-  <script>
-    window.$docsify = {
-      name: 'hispid',
-      repo: 'https://github.com/moyanj/hispid/',
-      onlyCover: Ture,
-      notFoundPage: 'error/404.md',
-      plugins: [
-            EditOnGithubPlugin.create('https://github.com/moyanj/hispid/blob/master/docs/', '在Github上编辑')
-      ]
-    }
-  </script>
-  <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+    <nav>
+        <a href="#/">EN</a>
+        <a href="#/zh-cn/">中文</a>
+    </nav>
+    <div id="app">加载中……</div>
+    <script>
+        window.$docsify = {
+            name: 'hispid',
+            repo: 'https://github.com/moyanj/hispid/',
+            onlyCover: Ture,
+            notFoundPage: '_404.md',
+            loadNavbar: true
+        }
+    </script>
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 </body>
 </html>
